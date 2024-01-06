@@ -84,6 +84,95 @@
             text-align: left;
             margin-left: 5%;
         }
+        
+        h2 {
+            font-size: x-large;
+            text-align: center;
+            color: #333;
+        }
+
+        table {
+            width:max-content;
+            margin: 20px auto;
+            border-collapse: collapse;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,td {
+            padding: 5px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        td:first-child {
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        th {
+            background-color: #2c3e50;;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+        }
+        .dropdown {
+      position: relative;
+      display:contents;
+    }
+
+    /* Style for the dropdown button */
+    .dropdown-button {
+      background-color: #2c3e50;
+      font-size: medium;
+      color: white;
+      padding: 10px;
+      width: 300px;
+      border: none;
+      border-radius: 8px;
+      cursor:context-menu;
+    }
+
+    /* Style for the dropdown content */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      /* min-width: 160px;   */
+      width: max-content;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      max-height: 300px; /* Set a fixed height for scrolling */
+      overflow-y: auto;
+    }
+
+    /* Style for the dropdown content items */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      width:auto;
+    }
+
+    /* Style for the dropdown content items on hover */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    /* Show the dropdown content when the dropdown button is hovered over */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+        /* @media (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+        } */
     </style>
 </head>
 
@@ -96,13 +185,62 @@
     </nav>
   <section>
         <div class="container">
-            <h2 class="mb-4">Module 1</h2>
+            <h2 class="mb-4">MODULE 1</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <iframe width="25%" height="200" src="https://www.youtube.com/embed/videoseries?si=N1dFTQIzOvTEtSdx&amp;list=PLEAYkSg4uSQ1YxqcmBjCdK9oX1m-JDEx2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <div class="card-body">
                             <h5 class="card-title">Design and Analysis of Algorithms - Prof. Madhavan Mukund | CMI - NPTEL</h5>
+                            <div class="dropdown">
+                                <button class="dropdown-button">Module 1 : Table of Contents</button>
+                                <div class="dropdown-content">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Lecture No.</th>
+                                        <th>Topic</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>	Lecture 01	</td><td>	Course Outline	</td></tr>
+                                    <tr><td>	Lecture 02 - 04	</td><td>	Examples	</td></tr>
+                                    <tr><td>	Lecture 05	</td><td>	Introduction	</td></tr>
+                                    <tr><td>	Lecture 06 -08	</td><td>	Basics (Design and Analysis)	</td></tr>
+                                    <tr><td>	Lecture 09	</td><td>	Arrays	</td></tr>
+                                    <tr><td>	Lecture 10	</td><td>	Search	</td></tr>
+                                    <tr><td>	Lecture 11	</td><td>	Selection Sort	</td></tr>
+                                    <tr><td>	Lecture 12	</td><td>	Insertion Sort	</td></tr>
+                                    <tr><td>	Lecture 13 - 14	</td><td>	Merge Sort	</td></tr>
+                                    <tr><td>	Lecture 15 - 16	</td><td>	Quicksort	</td></tr>
+                                    <tr><td>	Lecture 17	</td><td>	Sorting : Conclusions	</td></tr>
+                                    <tr><td>	Lecture 18 - 19	</td><td>	Graphs	</td></tr>
+                                    <tr><td>	Lecture 20 - 22	</td><td>	Breadth First Search (BFS) & Depth First Search (DFS)	</td></tr>
+                                    <tr><td>	Lecture 23 - 24	</td><td>	Directed Acyclic Graphs	</td></tr>
+                                    <tr><td>	Lecture 25 - 26	</td><td>	Dijkstras Algorithm	</td></tr>
+                                    <tr><td>	Lecture 27	</td><td>	Bellman-Ford Algorithm	</td></tr>
+                                    <tr><td>	Lecture 28	</td><td>	Shortest Paths	</td></tr>
+                                    <tr><td>	Lecture 29	</td><td>	Minimum Cost Spanning Trees	</td></tr>
+                                    <tr><td>	Lecture 30	</td><td>	Prims Algorithm	</td></tr>
+                                    <tr><td>	Lecture 31	</td><td>	Kruskals Algorithm	</td></tr>
+                                    <tr><td>	Lecture 32 - 33	</td><td>	Union-Find 	</td></tr>
+                                    <tr><td>	Lecture 34	</td><td>	Priority Queues	</td></tr>
+                                    <tr><td>	Lecture 35 - 38	</td><td>	Heaps	</td></tr>
+                                    <tr><td>	Lecture 39	</td><td>	Binary Search Trees	</td></tr>
+                                    <tr><td>	Lecture 40	</td><td>	Balanced Search Trees	</td></tr>
+                                    <tr><td>	Lecture 41 - 42	</td><td>	Interval Scheduling	</td></tr>
+                                    <tr><td>	Lecture 43	</td><td>	Huffman Codes	</td></tr>
+                                    <tr><td>	Lecture 44 - 49	</td><td>	Dynamic Programming, Memoization & Applications	</td></tr>
+                                    <tr><td>	Lecture 50 - 52	</td><td>	Linear Programming	</td></tr>
+                                    <tr><td>	Lecture 53 	</td><td>	Network Flows	</td></tr>
+                                    <tr><td>	Lecture 54	</td><td>	Reductions	</td></tr>
+                                    <tr><td>	Lecture 55	</td><td>	Checking Algorithms	</td></tr>
+                                    <tr><td>	Lecture 56	</td><td>	P and NP Hardness	</td></tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                             <!-- <p class="card-text">Welcome to the comprehensive course on "Design and Analysis of Algorithms," meticulously 
                                 crafted and expertly instructed by Prof. Madhavan Mukund. This course comprises 56 in-depth videos, providing
                                  a structured exploration of key algorithmic concepts essential for both beginners and seasoned enthusiasts.<br>
@@ -131,7 +269,7 @@
     </section>
 <section>
         <div class="container">
-            <h2 class="mb-4">Module 2</h2>
+            <h2 class="mb-4">MODULE 2</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card">
@@ -140,6 +278,35 @@
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">An Introduction to Probability in Computing - Prof. John Augustine | IITM - NPTEL</h5>
+                            <div class="dropdown">
+                                <button class="dropdown-button">Module 2 : Table of Contents</button>
+                                <div class="dropdown-content">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Lecture No.</th>
+                                        <th>Topic</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>	Week 1	</td><td>	Introduction, Matrix Multiplication, Examples	</td></tr>
+                                    <tr><td>	Week 2, Video 1	</td><td>	Discrete Random Variables	</td></tr>
+                                    <tr><td>	Week 2, Video 2	</td><td>	Jensens's Inequality	</td></tr>
+                                    <tr><td>	Week 2, Video 3-4	</td><td>	Conditional Expectation	</td></tr>
+                                    <tr><td>	Week 2, Video 5	</td><td>	Geometric RVs & Coupon Collector Problem	</td></tr>
+                                    <tr><td>	Week 2, Video 6	</td><td>	Randomized Selections 	</td></tr>
+                                    <tr><td>	Week 3, Video 1	</td><td>	Markov's Inequality	</td></tr>
+                                    <tr><td>	Week 3, Video 2	</td><td>	The Second Moment,Variance & Chebyshev's Inequality	</td></tr>
+                                    <tr><td>	Week 3, Video 3-4	</td><td>	Median via Sampling	</td></tr>
+                                    <tr><td>	Week 3, Video 5	</td><td>	Moment Generating Functions and Chernoff Bounds	</td></tr>
+                                    <tr><td>	Week 4, Video 1	</td><td>	Parameter Estimation	</td></tr>
+                                    <tr><td>	Week 4, Video 2	</td><td>	Control Group Selection	</td></tr>
+                                    <tr><td>	Week 4, Video 3-5	</td><td>	Applications of Tail Bounds	</td></tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                             <!-- <p class="card-text"> Embark on a captivating journey into the realm of probability with the course 
                                 "An Introduction to Probability in Computing," guided by the esteemed Prof. John Augustine. Over 
                                 the course of four weeks, Prof. Augustine provides a comprehensive exploration of fundamental concepts
@@ -165,13 +332,42 @@
 
 <section>
         <div class="container">
-            <h2 class="mb-4">Module 3</h2>
+            <h2 class="mb-4">MODULE 3</h2>
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card">
                         <iframe width="25%" height="200" src="https://www.youtube.com/embed/videoseries?si=QHnAABq5xiT3WwNM&amp;list=PLXbeECQLLcSh6V2JiGnuxXmBU1LAoFaeP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <div class="card-body">
                             <h5 class="card-title">Quantum Algorithmic Thinking - Prof. Partha Mukhopadhyay & Dr. Krishna V. Palem | CMI</h5>
+                            <div class="dropdown">
+                                <button class="dropdown-button">Module 3 : Table of Contents</button>
+                                <div class="dropdown-content">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Lecture No.</th>
+                                        <th>Topic</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>	Lecture 01	</td><td>	Mathematical Introduction to Quantum Computing	</td></tr>
+                                    <tr><td>	Lecture 02	</td><td>	Quantum Teleportation	</td></tr>
+                                    <tr><td>	Lecture 03	</td><td>	Deutsch Josza Algorithm	</td></tr>
+                                    <tr><td>	Lecture 04 - 05	</td><td>	CHSH Inequality, Simon's algorithm	</td></tr>
+                                    <tr><td>	Lecture 06	</td><td>	Lab 1 - Introduction to Qiskit	</td></tr>
+                                    <tr><td>	Lecture 07 - 10	</td><td>	Shor's Algorithm	</td></tr>
+                                    <tr><td>	Lecture 11 - 12	</td><td>	Grover's Algorithm	</td></tr>
+                                    <tr><td>	Lecture 13	</td><td>	Lab 2 - Qiskit Transpiler	</td></tr>
+                                    <tr><td>	Lecture 14	</td><td>	Lab 3 - Quantum Noise	</td></tr>
+                                    <tr><td>	Lecture 15	</td><td>	Spectral Interpretation of Boolean functions	</td></tr>
+                                    <tr><td>	Lecture 16	</td><td>	PAC Learning	</td></tr>
+                                    <tr><td>	Lecture 17	</td><td>	Quantum PAC Learning	</td></tr>
+                                    <tr><td>	Lecture 18 - 19	</td><td>	Quantum Algorithmic Thinking	</td></tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                             <!-- <p class="card-text">Embark on a groundbreaking exploration of the quantum frontier with the course "Quantum Algorithmic Thinking," a 
                                 dual-part series featuring the expertise of two distinguished instructors, Prof. Partha Mukhopadhyay and Prof. Krishna Palem. In 
                                 Part 1, under the guidance of Prof. Mukhopadhyay, participants delve into the foundational aspects of quantum computing. The course kicks
